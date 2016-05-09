@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="mind.com.animations.MainActivity">
+
+    <ImageView
+        android:id="@+id/clouds1"
+        android:src="@drawable/clouds"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/clouds2"
+        android:src="@drawable/clouds2"
+        android:layout_below="@+id/clouds1"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/airplane"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/airplane" />
+
+    <TextView
+        android:id="@+id/text_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Loading..."
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginBottom="20dp"/>
+</RelativeLayout>
